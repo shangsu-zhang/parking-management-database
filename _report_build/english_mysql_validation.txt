@@ -1,0 +1,78 @@
+MySQL isolated execution
+VERSION()
+8.0.46
+
+Script exit code: 0
+parking_record_id	vehicle_id	parking_space_id	entry_time	record_status
+4	1	1	2026-10-19 08:00:00	在场
+rental_contract_id	contract_no	vehicle_id	start_date	end_date	monthly_rent
+2	HT-2026-002	3	2026-09-01	2026-11-10	450.00
+payment_no	payment_type	amount_due	amount_paid	payment_method	paid_at
+PAY-20261019-004	临停停车费	30.00	30.00	银行卡	2026-10-19 08:35:00
+PAY-20261019-008	月租费	450.00	450.00	支付宝	2026-10-19 09:30:00
+PAY-20261019-001	临停停车费	15.00	15.00	微信	2026-10-19 10:46:00
+PAY-20261019-002	临停停车费	10.00	10.00	现金	2026-10-19 11:12:00
+license_plate	owner_name	space_code	area	entry_time	parking_type
+京A12345	张三	A001	A 区	2026-10-19 08:00:00	临时停车
+京B23456	张三	B001	B 区	2026-10-19 07:40:00	月租停车
+京C34567	李四	B002	B 区	2026-10-19 08:20:00	月租停车
+contract_no	license_plate	owner_name	monthly_rent	paid_amount	paid_count
+HT-2026-004	京C34567	李四	450.00	0.00	0
+HT-2026-003	京D45678	王五	600.00	0.00	0
+HT-2026-002	京C34567	李四	450.00	450.00	1
+HT-2026-001	京B23456	张三	500.00	1000.00	2
+payment_date	payment_type	administrator_name	payment_count	revenue_amount
+2026-10-19	临停停车费	李娜	2	25.00
+2026-10-19	临停停车费	王强	1	30.00
+2026-10-19	月租费	李娜	1	450.00
+2026-10-18	临停停车费	王强	1	5.00
+2026-10-17	临停停车费	李娜	1	15.00
+2026-10-05	月租费	张伟	1	500.00
+2026-09-01	月租费	张伟	1	500.00
+area	total_spaces	occupied_spaces	available_spaces	disabled_spaces	occupancy_rate
+A 区	6	1	4	1	16.67
+B 区	4	2	2	0	50.00
+license_plate	owner_name	parking_count	total_duration_minutes	total_amount_due
+京A12345	张三	3	200	20.00
+京B23456	张三	2	600	0.00
+京C34567	李四	2	60	0.00
+京D45678	王五	1	750	30.00
+京E56789	赵六	1	120	10.00
+京F67890	李四	1	135	15.00
+payment_type	payment_count	total_amount_paid
+临停停车费	5	75.00
+月租费	3	1450.00
+全部类型	8	1525.00
+employee_no	name	role	parking_record_count	rental_contract_count	paid_payment_count	collected_amount
+1001	张伟	主管	0	2	2	1000.00
+1002	李娜	收费员	6	2	4	490.00
+1003	王强	收费员	4	0	2	35.00
+date	temporary_revenue	rental_revenue	daily_revenue
+2026-10-05	0.00	500.00	500.00
+2026-10-17	15.00	0.00	15.00
+2026-10-18	5.00	0.00	5.00
+2026-10-19	55.00	450.00	505.00
+table_name	record_count
+车主	5
+车辆	6
+车位	10
+管理员	3
+收费规则	3
+月租合同	4
+停车记录	10
+缴费记录	9
+
+STDERR
+
+Schema checks
+table_count
+8
+column_count
+73
+foreign_key_count
+12
+check_count
+31
+
+Negative CHECK test (expected rejection)
+ERROR 3819 (HY000) at line 1: Check constraint 'chk_record_status_exit_consistency' is violated.

@@ -1,0 +1,283 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.1 Chrome/142.0.7444.265 Electron/39.8.0 Safari/537.36" version="29.6.1">
+  <diagram id="page1" name="第1页">
+    <mxGraphModel dx="2156" dy="1260" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2400" pageHeight="1800" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontFamily=宋体;fontSize=10.5;fontColor=#000000;fontSize=16;fontStyle=1;align=left;" value="停车场管理系统实体—属性图（核心属性）" vertex="1">
+          <mxGeometry height="32" width="900" x="60" y="25" as="geometry" />
+        </mxCell>
+        <mxCell id="note" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontFamily=宋体;fontSize=10.5;fontColor=#000000;align=left;" value="仅显示核心属性；完整字段与约束见 01_需求与数据库模型.md。下划线表示主键，FK 表示外键。" vertex="1">
+          <mxGeometry height="26" width="1500" x="60" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" parent="1" style="whiteSpace=wrap;html=1;fontFamily=宋体;fontSize=10.5;align=center;verticalAlign=middle;rounded=0;fillColor=none;strokeColor=#000000;fontColor=#000000;" value="车主" vertex="1">
+          <mxGeometry height="48" width="150" x="220" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="e1_a1" parent="1" style="whiteSpace=wrap;html=1;fontFamily=宋体;fontSize=10.5;align=center;verticalAlign=middle;shape=ellipse;fillColor=none;strokeColor=#000000;fontColor=#000000;" value="&lt;u&gt;车主ID&lt;/u&gt;" vertex="1">
+          <mxGeometry height="40" width="130" x="70" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="e1_a1_edge" edge="1" parent="1" source="e1" style="html=1;rounded=0;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=0.5;fontFamily=宋体;fontSize=10.5;" target="e1_a1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1_a2" parent="1" style="whiteSpace=wrap;html=1;fontFamily=宋体;fontSize=10.5;align=center;verticalAlign=middle;shape=ellipse;fillColor=none;strokeColor=#000000;fontColor=#000000;" value="姓名" vertex="1">
+          <mxGeometry height="40" width="130" x="240" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="e1_a2_edge" edge="1" parent="1" source="e1" style="html=1;rounded=0;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=0.5;fontFamily=宋体;fontSize=10.5;" target="e1_a2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1_a3" parent="1" style="whiteSpace=wrap;html=1;fontFamily=宋体;fontSize=10.5;align=center;verticalAlign=middle;shape=ellipse;fillColor=none;strokeColor=#000000;fontColor=#000000;" value="身份证号" vertex="1">
+          <mxGeometry height="40" width="130" x="70" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="e1_a3_edge" edge="1" parent="1" source="e1" style="html=1;rounded=0;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=0.5;fontFamily=宋体;fontSize=10.5;" target="e1_a3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1_a4" parent="1" style="whiteSpace=wrap;html=1;fontFamily=宋体;fontSize=10.5;align=center;verticalAlign=middle;shape=ellipse;fillColor=none;strokeColor=#000000;fontColor=#000000;" value="联系电话" vertex="1">
+          <mxGeometry height="40" width="130" x="310" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="e1_a4_edge" edge="1" parent="1" source="e1" style="html=1;rounded=0;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=0.5;fontFamily=宋体;fontSize=10.5;" target="e1_a4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" parent="1" style="whiteSpace=wrap;html=1;fontFamily=宋体;fontSize=10.5;align=center;verticalAlign=middle;rounded=0;fillColor=none;strokeColor=#000000;fontColor=#000000;" value="车辆" vertex="1">
+          <mxGeometry height="48" width="150" x="760" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="e2_a1" parent="1" style="whiteSpace=wrap;html=1;fontFamily=宋体;fontSize=10.5;align=center;verticalAlign=middle;shape=ellipse;fillColor=none;strokeColor=#000000;fontColor=#000000;" value="&lt;u&gt;车辆ID&lt;/u&gt;" vertex="1">
+          <mxGeometry height="40" width="130" x="610" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="e2_a1_edge" edge="1" parent="1" source="e2" style="html=1;rounded=0;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=0.5;fontFamily=宋体;fontSize=10.5;" target="e2_a1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2_a2" parent="1" style="whiteSpace=wrap;html=1;fontFamily=宋体;fontSize=10.5;align=center;verticalAlign=middle;shape=ellipse;fillColor=none;strokeColor=#000000;fontColor=#000000;" value="车牌号" vertex="1">
+          <mxGeometry height="40" width="130" x="780" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="e2_a2_edge" edge="1" parent="1" source="e2" style="html=1;rounded=0;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=0.5;fontFamily=宋体;fontSize=10.5;" target="e2_a2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2_a3" parent="1" style="whiteSpace=wrap;html=1;fontFamily=宋体;fontSize=10.5;align=center;verticalAlign=middle;shape=ellipse;fillColor=none;strokeColor=#000000;fontColor=#000000;" value="车辆类型" vertex="1">
+          <mxGeometry height="40" width="130" x="610" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="e2_a3_edge" edge="1" parent="1" source="e2" style="html=1;rounded=0;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=0.5;fontFamily=宋体;fontSize=10.5;" target="e2_a3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2_a4" parent="1" style="whiteSpace=wrap;html=1;fontFamily=宋体;fontSize=10.5;align=center;verticalAlign=middle;shape=ellipse;fillColor=none;strokeColor=#000000;fontColor=#000000;" value="车主ID（FK）" vertex="1">
+          <mxGeometry height="40" width="130" x="780" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="e2_a4_edge" edge="1" parent="1" source="e2" style="html=1;rounded=0;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=0.5;fontFamily=宋体;fontSize=10.5;" target="e2_a4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" parent="1" style="whiteSpace=wrap;html=1;fontFamily=宋体;fontSize=10.5;align=center;verticalAlign=middle;rounded=0;fillColor=none;strokeColor=#000000;fontColor=#000000;" value="车位" vertex="1">
+          <mxGeometry height="48" width="150" x="1300" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="e3_a1" parent="1" style="whiteSpace=wrap;html=1;fontFamily=宋体;fontSize=10.5;align=center;verticalAlign=middle;shape=ellipse;fillColor=none;strokeColor=#000000;fontColor=#000000;" value="&lt;u&gt;车位ID&lt;/u&gt;" vertex="1">
+          <mxGeometry height="40" width="130" x="1150" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="e3_a1_edge" edge="1" parent="1" source="e3" style="html=1;rounded=0;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=0.5;fontFamily=宋体;fontSize=10.5;" target="e3_a1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3_a2" parent="1" style="whiteSpace=wrap;html=1;fontFamily=宋体;fontSize=10.5;align=center;verticalAlign=middle;shape=ellipse;fillColor=none;strokeColor=#000000;fontColor=#000000;" value="车位编号" vertex="1">
+          <mxGeometry height="40" width="130" x="1320" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="e3_a2_edge" edge="1" parent="1" source="e3" style="html=1;rounded=0;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=0.5;fontFamily=宋体;fontSize=10.5;" target="e3_a2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3_a3" parent="1" style="whiteSpace=wrap;html=1;fontFamily=宋体;fontSize=10.5;align=center;verticalAlign=middle;shape=ellipse;fillColor=none;strokeColor=#000000;fontColor=#000000;" value="区域" vertex="1">
+          <mxGeometry height="40" width="130" x="1150" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="e3_a3_edge" edge="1" parent="1" source="e3" style="html=1;rounded=0;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=0.5;fontFamily=宋体;fontSize=10.5;" target="e3_a3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3_a4" parent="1" style="whiteSpace=wrap;html=1;fontFamily=宋体;fontSize=10.5;align=center;verticalAlign=middle;shape=ellipse;fillColor=none;strokeColor=#000000;fontColor=#000000;" value="车位状态" vertex="1">
+          <mxGeometry height="40" width="130" x="1320" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="e3_a4_edge" edge="1" parent="1" source="e3" style="html=1;rounded=0;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=0.5;fontFamily=宋体;fontSize=10.5;" target="e3_a4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" parent="1" style="whiteSpace=wrap;html=1;fontFamily=宋体;fontSize=10.5;align=center;verticalAlign=middle;rounded=0;fillColor=none;strokeColor=#000000;fontColor=#000000;" value="停车记录" vertex="1">
+          <mxGeometry height="48" width="150" x="1890" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="e4_a1" parent="1" style="whiteSpace=wrap;html=1;fontFamily=宋体;fontSize=10.5;align=center;verticalAlign=middle;shape=ellipse;fillColor=none;strokeColor=#000000;fontColor=#000000;" value="&lt;u&gt;停车记录ID&lt;/u&gt;" vertex="1">
+          <mxGeometry height="40" width="130" x="1690" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="e4_a1_edge" edge="1" parent="1" source="e4" style="html=1;rounded=0;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=0.5;fontFamily=宋体;fontSize=10.5;" target="e4_a1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4_a2" parent="1" style="whiteSpace=wrap;html=1;fontFamily=宋体;fontSize=10.5;align=center;verticalAlign=middle;shape=ellipse;fillColor=none;strokeColor=#000000;fontColor=#000000;" value="车辆ID（FK）" vertex="1">
+          <mxGeometry height="40" width="130" x="1860" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="e4_a2_edge" edge="1" parent="1" source="e4" style="html=1;rounded=0;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=0.5;fontFamily=宋体;fontSize=10.5;" target="e4_a2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4_a3" parent="1" style="whiteSpace=wrap;html=1;fontFamily=宋体;fontSize=10.5;align=center;verticalAlign=middle;shape=ellipse;fillColor=none;strokeColor=#000000;fontColor=#000000;" value="车位ID（FK）" vertex="1">
+          <mxGeometry height="40" width="130" x="1690" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="e4_a3_edge" edge="1" parent="1" source="e4" style="html=1;rounded=0;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=0.5;fontFamily=宋体;fontSize=10.5;" target="e4_a3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4_a4" parent="1" style="whiteSpace=wrap;html=1;fontFamily=宋体;fontSize=10.5;align=center;verticalAlign=middle;shape=ellipse;fillColor=none;strokeColor=#000000;fontColor=#000000;" value="停车类型" vertex="1">
+          <mxGeometry height="40" width="130" x="1820" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="e4_a4_edge" edge="1" parent="1" source="e4" style="html=1;rounded=0;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=0.5;fontFamily=宋体;fontSize=10.5;" target="e4_a4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4_a5" parent="1" style="whiteSpace=wrap;html=1;fontFamily=宋体;fontSize=10.5;align=center;verticalAlign=middle;shape=ellipse;fillColor=none;strokeColor=#000000;fontColor=#000000;" value="入场时间" vertex="1">
+          <mxGeometry height="40" width="130" x="1640" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="e4_a5_edge" edge="1" parent="1" source="e4" style="html=1;rounded=0;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=0.5;fontFamily=宋体;fontSize=10.5;" target="e4_a5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4_a6" parent="1" style="whiteSpace=wrap;html=1;fontFamily=宋体;fontSize=10.5;align=center;verticalAlign=middle;shape=ellipse;fillColor=none;strokeColor=#000000;fontColor=#000000;" value="出场时间" vertex="1">
+          <mxGeometry height="40" width="130" x="1970" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="e4_a6_edge" edge="1" parent="1" source="e4" style="html=1;rounded=0;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=0.5;fontFamily=宋体;fontSize=10.5;" target="e4_a6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4_a7" parent="1" style="whiteSpace=wrap;html=1;fontFamily=宋体;fontSize=10.5;align=center;verticalAlign=middle;shape=ellipse;fillColor=none;strokeColor=#000000;fontColor=#000000;" value="应收金额" vertex="1">
+          <mxGeometry height="40" width="130" x="1775" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="e4_a7_edge" edge="1" parent="1" source="e4" style="html=1;rounded=0;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=0.5;fontFamily=宋体;fontSize=10.5;" target="e4_a7" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" parent="1" style="whiteSpace=wrap;html=1;fontFamily=宋体;fontSize=10.5;align=center;verticalAlign=middle;rounded=0;fillColor=none;strokeColor=#000000;fontColor=#000000;" value="收费规则" vertex="1">
+          <mxGeometry height="48" width="150" x="220" y="1120" as="geometry" />
+        </mxCell>
+        <mxCell id="e5_a1" parent="1" style="whiteSpace=wrap;html=1;fontFamily=宋体;fontSize=10.5;align=center;verticalAlign=middle;shape=ellipse;fillColor=none;strokeColor=#000000;fontColor=#000000;" value="&lt;u&gt;收费规则ID&lt;/u&gt;" vertex="1">
+          <mxGeometry height="40" width="130" x="70" y="900" as="geometry" />
+        </mxCell>
+        <mxCell id="e5_a1_edge" edge="1" parent="1" source="e5" style="html=1;rounded=0;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=0.5;fontFamily=宋体;fontSize=10.5;" target="e5_a1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5_a2" parent="1" style="whiteSpace=wrap;html=1;fontFamily=宋体;fontSize=10.5;align=center;verticalAlign=middle;shape=ellipse;fillColor=none;strokeColor=#000000;fontColor=#000000;" value="规则名称" vertex="1">
+          <mxGeometry height="40" width="130" x="240" y="900" as="geometry" />
+        </mxCell>
+        <mxCell id="e5_a2_edge" edge="1" parent="1" source="e5" style="html=1;rounded=0;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=0.5;fontFamily=宋体;fontSize=10.5;" target="e5_a2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5_a3" parent="1" style="whiteSpace=wrap;html=1;fontFamily=宋体;fontSize=10.5;align=center;verticalAlign=middle;shape=ellipse;fillColor=none;strokeColor=#000000;fontColor=#000000;" value="每小时单价" vertex="1">
+          <mxGeometry height="40" width="130" x="70" y="990" as="geometry" />
+        </mxCell>
+        <mxCell id="e5_a3_edge" edge="1" parent="1" source="e5" style="html=1;rounded=0;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=0.5;fontFamily=宋体;fontSize=10.5;" target="e5_a3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5_a4" parent="1" style="whiteSpace=wrap;html=1;fontFamily=宋体;fontSize=10.5;align=center;verticalAlign=middle;shape=ellipse;fillColor=none;strokeColor=#000000;fontColor=#000000;" value="生效日期" vertex="1">
+          <mxGeometry height="40" width="130" x="340" y="990" as="geometry" />
+        </mxCell>
+        <mxCell id="e5_a4_edge" edge="1" parent="1" source="e5" style="html=1;rounded=0;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=0.5;fontFamily=宋体;fontSize=10.5;" target="e5_a4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" parent="1" style="whiteSpace=wrap;html=1;fontFamily=宋体;fontSize=10.5;align=center;verticalAlign=middle;rounded=0;fillColor=none;strokeColor=#000000;fontColor=#000000;" value="月租合同" vertex="1">
+          <mxGeometry height="48" width="150" x="760" y="1120" as="geometry" />
+        </mxCell>
+        <mxCell id="e6_a1" parent="1" style="whiteSpace=wrap;html=1;fontFamily=宋体;fontSize=10.5;align=center;verticalAlign=middle;shape=ellipse;fillColor=none;strokeColor=#000000;fontColor=#000000;" value="&lt;u&gt;月租合同ID&lt;/u&gt;" vertex="1">
+          <mxGeometry height="40" width="130" x="610" y="900" as="geometry" />
+        </mxCell>
+        <mxCell id="e6_a1_edge" edge="1" parent="1" source="e6" style="html=1;rounded=0;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=0.5;fontFamily=宋体;fontSize=10.5;" target="e6_a1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6_a2" parent="1" style="whiteSpace=wrap;html=1;fontFamily=宋体;fontSize=10.5;align=center;verticalAlign=middle;shape=ellipse;fillColor=none;strokeColor=#000000;fontColor=#000000;" value="合同编号" vertex="1">
+          <mxGeometry height="40" width="130" x="780" y="900" as="geometry" />
+        </mxCell>
+        <mxCell id="e6_a2_edge" edge="1" parent="1" source="e6" style="html=1;rounded=0;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=0.5;fontFamily=宋体;fontSize=10.5;" target="e6_a2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6_a3" parent="1" style="whiteSpace=wrap;html=1;fontFamily=宋体;fontSize=10.5;align=center;verticalAlign=middle;shape=ellipse;fillColor=none;strokeColor=#000000;fontColor=#000000;" value="车辆ID（FK）" vertex="1">
+          <mxGeometry height="40" width="130" x="610" y="990" as="geometry" />
+        </mxCell>
+        <mxCell id="e6_a3_edge" edge="1" parent="1" source="e6" style="html=1;rounded=0;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=0.5;fontFamily=宋体;fontSize=10.5;" target="e6_a3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6_a4" parent="1" style="whiteSpace=wrap;html=1;fontFamily=宋体;fontSize=10.5;align=center;verticalAlign=middle;shape=ellipse;fillColor=none;strokeColor=#000000;fontColor=#000000;" value="开始日期" vertex="1">
+          <mxGeometry height="40" width="130" x="780" y="990" as="geometry" />
+        </mxCell>
+        <mxCell id="e6_a4_edge" edge="1" parent="1" source="e6" style="html=1;rounded=0;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=0.5;fontFamily=宋体;fontSize=10.5;" target="e6_a4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6_a5" parent="1" style="whiteSpace=wrap;html=1;fontFamily=宋体;fontSize=10.5;align=center;verticalAlign=middle;shape=ellipse;fillColor=none;strokeColor=#000000;fontColor=#000000;" value="结束日期" vertex="1">
+          <mxGeometry height="40" width="130" x="610" y="1080" as="geometry" />
+        </mxCell>
+        <mxCell id="e6_a5_edge" edge="1" parent="1" source="e6" style="html=1;rounded=0;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=0.5;fontFamily=宋体;fontSize=10.5;" target="e6_a5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6_a6" parent="1" style="whiteSpace=wrap;html=1;fontFamily=宋体;fontSize=10.5;align=center;verticalAlign=middle;shape=ellipse;fillColor=none;strokeColor=#000000;fontColor=#000000;" value="月租金额" vertex="1">
+          <mxGeometry height="40" width="130" x="880" y="1040" as="geometry" />
+        </mxCell>
+        <mxCell id="e6_a6_edge" edge="1" parent="1" source="e6" style="html=1;rounded=0;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=0.5;fontFamily=宋体;fontSize=10.5;" target="e6_a6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" parent="1" style="whiteSpace=wrap;html=1;fontFamily=宋体;fontSize=10.5;align=center;verticalAlign=middle;rounded=0;fillColor=none;strokeColor=#000000;fontColor=#000000;" value="缴费记录" vertex="1">
+          <mxGeometry height="48" width="150" x="1300" y="1120" as="geometry" />
+        </mxCell>
+        <mxCell id="e7_a1" parent="1" style="whiteSpace=wrap;html=1;fontFamily=宋体;fontSize=10.5;align=center;verticalAlign=middle;shape=ellipse;fillColor=none;strokeColor=#000000;fontColor=#000000;" value="&lt;u&gt;缴费记录ID&lt;/u&gt;" vertex="1">
+          <mxGeometry height="40" width="130" x="1150" y="900" as="geometry" />
+        </mxCell>
+        <mxCell id="e7_a1_edge" edge="1" parent="1" source="e7" style="html=1;rounded=0;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=0.5;fontFamily=宋体;fontSize=10.5;" target="e7_a1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7_a2" parent="1" style="whiteSpace=wrap;html=1;fontFamily=宋体;fontSize=10.5;align=center;verticalAlign=middle;shape=ellipse;fillColor=none;strokeColor=#000000;fontColor=#000000;" value="支付流水号" vertex="1">
+          <mxGeometry height="40" width="130" x="1320" y="900" as="geometry" />
+        </mxCell>
+        <mxCell id="e7_a2_edge" edge="1" parent="1" source="e7" style="html=1;rounded=0;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=0.5;fontFamily=宋体;fontSize=10.5;" target="e7_a2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7_a3" parent="1" style="whiteSpace=wrap;html=1;fontFamily=宋体;fontSize=10.5;align=center;verticalAlign=middle;shape=ellipse;fillColor=none;strokeColor=#000000;fontColor=#000000;" value="缴费类型" vertex="1">
+          <mxGeometry height="40" width="130" x="1150" y="990" as="geometry" />
+        </mxCell>
+        <mxCell id="e7_a3_edge" edge="1" parent="1" source="e7" style="html=1;rounded=0;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=0.5;fontFamily=宋体;fontSize=10.5;" target="e7_a3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7_a4" parent="1" style="whiteSpace=wrap;html=1;fontFamily=宋体;fontSize=10.5;align=center;verticalAlign=middle;shape=ellipse;fillColor=none;strokeColor=#000000;fontColor=#000000;" value="停车记录ID（FK）" vertex="1">
+          <mxGeometry height="40" width="130" x="1320" y="990" as="geometry" />
+        </mxCell>
+        <mxCell id="e7_a4_edge" edge="1" parent="1" source="e7" style="html=1;rounded=0;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=0.5;fontFamily=宋体;fontSize=10.5;" target="e7_a4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7_a5" parent="1" style="whiteSpace=wrap;html=1;fontFamily=宋体;fontSize=10.5;align=center;verticalAlign=middle;shape=ellipse;fillColor=none;strokeColor=#000000;fontColor=#000000;" value="月租合同ID（FK）" vertex="1">
+          <mxGeometry height="40" width="130" x="1150" y="1080" as="geometry" />
+        </mxCell>
+        <mxCell id="e7_a5_edge" edge="1" parent="1" source="e7" style="html=1;rounded=0;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=0.5;fontFamily=宋体;fontSize=10.5;" target="e7_a5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7_a6" parent="1" style="whiteSpace=wrap;html=1;fontFamily=宋体;fontSize=10.5;align=center;verticalAlign=middle;shape=ellipse;fillColor=none;strokeColor=#000000;fontColor=#000000;" value="实收金额" vertex="1">
+          <mxGeometry height="40" width="130" x="1430" y="1020" as="geometry" />
+        </mxCell>
+        <mxCell id="e7_a6_edge" edge="1" parent="1" source="e7" style="html=1;rounded=0;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=0.5;fontFamily=宋体;fontSize=10.5;" target="e7_a6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7_a7" parent="1" style="whiteSpace=wrap;html=1;fontFamily=宋体;fontSize=10.5;align=center;verticalAlign=middle;shape=ellipse;fillColor=none;strokeColor=#000000;fontColor=#000000;" value="支付时间" vertex="1">
+          <mxGeometry height="40" width="130" x="1235" y="1200" as="geometry" />
+        </mxCell>
+        <mxCell id="e7_a7_edge" edge="1" parent="1" source="e7" style="html=1;rounded=0;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=0.5;fontFamily=宋体;fontSize=10.5;" target="e7_a7" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" parent="1" style="whiteSpace=wrap;html=1;fontFamily=宋体;fontSize=10.5;align=center;verticalAlign=middle;rounded=0;fillColor=none;strokeColor=#000000;fontColor=#000000;" value="管理员" vertex="1">
+          <mxGeometry height="48" width="150" x="1840" y="1120" as="geometry" />
+        </mxCell>
+        <mxCell id="e8_a1" parent="1" style="whiteSpace=wrap;html=1;fontFamily=宋体;fontSize=10.5;align=center;verticalAlign=middle;shape=ellipse;fillColor=none;strokeColor=#000000;fontColor=#000000;" value="&lt;u&gt;管理员ID&lt;/u&gt;" vertex="1">
+          <mxGeometry height="40" width="130" x="1690" y="900" as="geometry" />
+        </mxCell>
+        <mxCell id="e8_a1_edge" edge="1" parent="1" source="e8" style="html=1;rounded=0;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=0.5;fontFamily=宋体;fontSize=10.5;" target="e8_a1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8_a2" parent="1" style="whiteSpace=wrap;html=1;fontFamily=宋体;fontSize=10.5;align=center;verticalAlign=middle;shape=ellipse;fillColor=none;strokeColor=#000000;fontColor=#000000;" value="工号" vertex="1">
+          <mxGeometry height="40" width="130" x="1860" y="900" as="geometry" />
+        </mxCell>
+        <mxCell id="e8_a2_edge" edge="1" parent="1" source="e8" style="html=1;rounded=0;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=0.5;fontFamily=宋体;fontSize=10.5;" target="e8_a2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8_a3" parent="1" style="whiteSpace=wrap;html=1;fontFamily=宋体;fontSize=10.5;align=center;verticalAlign=middle;shape=ellipse;fillColor=none;strokeColor=#000000;fontColor=#000000;" value="姓名" vertex="1">
+          <mxGeometry height="40" width="130" x="1690" y="990" as="geometry" />
+        </mxCell>
+        <mxCell id="e8_a3_edge" edge="1" parent="1" source="e8" style="html=1;rounded=0;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=0.5;fontFamily=宋体;fontSize=10.5;" target="e8_a3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8_a4" parent="1" style="whiteSpace=wrap;html=1;fontFamily=宋体;fontSize=10.5;align=center;verticalAlign=middle;shape=ellipse;fillColor=none;strokeColor=#000000;fontColor=#000000;" value="登录账号" vertex="1">
+          <mxGeometry height="40" width="130" x="1860" y="990" as="geometry" />
+        </mxCell>
+        <mxCell id="e8_a4_edge" edge="1" parent="1" source="e8" style="html=1;rounded=0;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=0.5;fontFamily=宋体;fontSize=10.5;" target="e8_a4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="foot" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontFamily=宋体;fontSize=10.5;fontColor=#000000;align=left;" value="共 8 个实体；核心属性已与需求文档中的主键、关键识别字段和外键保持一致。" vertex="1">
+          <mxGeometry height="28" width="1500" x="60" y="1710" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
