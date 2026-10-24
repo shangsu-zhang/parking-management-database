@@ -6,8 +6,8 @@ from docx.oxml.ns import qn
 from docx.shared import Pt
 
 
-root = Path(r"C:\Users\Administrator\Desktop\work\停车场管理数据库项目")
-path = root / "停车场管理项目报告.docx"
+root = Path(__file__).resolve().parents[2]
+path = root / "report" / "停车场管理项目报告.docx"
 doc = Document(path)
 cover = doc.tables[0]
 

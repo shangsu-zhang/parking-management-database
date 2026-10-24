@@ -5,7 +5,7 @@ import subprocess
 import tempfile
 import time
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 BIN = Path(r'C:\Program Files\MySQL\MySQL Server 8.0\bin')
 WORK = Path(tempfile.mkdtemp(prefix='parking_mysql_english_'))
 DATA = WORK/'data'
@@ -51,14 +51,14 @@ SELECT COUNT(*) AS check_count FROM information_schema.table_constraints WHERE c
               '\nScript exit code: '+str(run.returncode)+'\n'+run.stdout.decode('utf-8')+
               '\nSTDERR\n'+run.stderr.decode('utf-8')+
               '\nSchema checks\n'+check.stdout.decode('utf-8')+check.stderr.decode('utf-8'))
-    (ROOT/'_report_build'/'english_mysql_validation.txt').write_text(report,encoding='utf-8')
+    (ROOT/'report'/'build'/'english_mysql_validation.txt').write_text(report,encoding='utf-8')
     assert run.returncode == 0, run.stderr.decode('utf-8')
     assert check.returncode == 0, check.stderr.decode('utf-8')
     print(check.stdout.decode('utf-8'),flush=True)
     # The invalid in-place update must be rejected by the renamed CHECK.
     negative = subprocess.run(client,input=b"USE parking_management_db; UPDATE parking_record SET record_status='\xe5\xb7\xb2\xe5\x87\xba\xe5\x9c\xba' WHERE record_status='\xe5\x9c\xa8\xe5\x9c\xba' LIMIT 1;",capture_output=True,creationflags=flags)
     assert negative.returncode != 0 and b'3819' in negative.stderr, negative.stderr
-    with (ROOT/'_report_build'/'english_mysql_validation.txt').open('a',encoding='utf-8') as f:
+    with (ROOT/'report'/'build'/'english_mysql_validation.txt').open('a',encoding='utf-8') as f:
         f.write('\nNegative CHECK test (expected rejection)\n'+negative.stderr.decode('utf-8'))
     print('All script statements and queries passed; invalid status update rejected.',flush=True)
 finally:

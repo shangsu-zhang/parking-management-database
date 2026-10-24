@@ -10,8 +10,8 @@ from zipfile import ZipFile
 
 from lxml import etree
 
-ROOT = Path(__file__).resolve().parents[1]
-SOURCE = ROOT / '_report_build' / 'build_report.py'
+ROOT = Path(__file__).resolve().parents[2]
+SOURCE = Path(__file__).resolve().with_name('build_report.py')
 tree = ast.parse(SOURCE.read_text(encoding='utf-8-sig'))
 MAPPING = next(ast.literal_eval(n.value) for n in tree.body
                if isinstance(n, ast.Assign) and any(
@@ -46,7 +46,7 @@ blocks = re.findall(r'CREATE TABLE `([^`]+)` \((.*?)\n\) ENGINE', sql, re.S)
 schemas = {name: re.findall(r'^\s*`([^`]+)`\s+[A-Z]', body, re.M) for name, body in blocks}
 assert len(schemas) == 8 and sum(map(len, schemas.values())) == 73
 
-md_paths = [ROOT/'01_需求与数据库模型.md', ROOT/'sql'/'字段设计说明.md', ROOT/'sql'/'查询说明.md']
+md_paths = [ROOT/'docs'/'01_需求与数据库模型.md', ROOT/'sql'/'字段设计说明.md', ROOT/'sql'/'查询说明.md']
 for path in md_paths:
     text = quoted(path.read_text(encoding='utf-8-sig'))
     lines = []
@@ -102,7 +102,7 @@ for chinese in concepts:
     src = src.replace('"FK→'+chinese+'"', '"FK→'+MAPPING[chinese]+'"')
 SOURCE.write_text(src, encoding='utf-8')
 
-report_path = ROOT/'停车场管理项目报告.docx'
+report_path = ROOT/'report'/'停车场管理项目报告.docx'
 backup = Path(tempfile.mkdtemp(prefix='parking_english_before_')) / report_path.name
 shutil.copy2(report_path, backup)
 W = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main'

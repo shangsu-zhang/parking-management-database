@@ -8,8 +8,9 @@ import re
 import shutil
 from lxml import etree
 
-ROOT = Path(__file__).resolve().parents[1]
-PATH = ROOT / '停车场管理项目报告.docx'
+ROOT = Path(__file__).resolve().parents[2]
+WORK = Path(__file__).resolve().parent
+PATH = ROOT / 'report' / '停车场管理项目报告.docx'
 W = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main'
 NS = {'w': W}
 def tag(name): return '{'+W+'}'+name
@@ -47,7 +48,7 @@ def font(p, size, east='宋体', latin='Times New Roman', bold=None):
         if bold is not None: attrs(child(props,'b'),val=int(bold))
 def has_picture(p): return bool(p.findall('.//w:drawing',NS) or p.findall('.//w:pict',NS))
 
-backup_dir=ROOT/'_report_build'/'format_backup'
+backup_dir=WORK/'format_backup'
 backup_dir.mkdir(exist_ok=True)
 backup=backup_dir/(datetime.now().strftime('%Y%m%d_%H%M%S')+'_'+PATH.name)
 shutil.copy2(PATH, backup)
@@ -138,5 +139,5 @@ with ZipFile(PATH) as z:
     assert z.testzip() is None
     assert all(z.read(name)==value for name,value in original_media.items())
 record={'backup':str(backup),'picture_paragraphs_single_spaced':pictures,'removed_empty_spacers':removed,'text_unchanged':True,'image_bytes_and_drawing_xml_unchanged':True}
-(ROOT/'_report_build'/'format_validation.json').write_text(json.dumps(record,ensure_ascii=False,indent=2),encoding='utf-8')
+(WORK/'format_validation.json').write_text(json.dumps(record,ensure_ascii=False,indent=2),encoding='utf-8')
 print(json.dumps(record,ensure_ascii=False))

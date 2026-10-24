@@ -8,12 +8,12 @@ from docx.oxml.ns import qn
 from docx.shared import Inches, Pt, RGBColor
 
 
-ROOT = Path(r"C:\Users\Administrator\Desktop\work\停车场管理数据库项目")
-WORK = Path(r"C:\Users\Administrator\Desktop\work\_report_build")
+ROOT = Path(__file__).resolve().parents[2]
+WORK = Path(__file__).resolve().parent
 SOURCE = WORK / "template.docx"
-OUTPUT = ROOT / "停车场管理项目报告.docx"
-ENTITY_IMAGE = WORK / "entity-attributes.png"
-ER_IMAGE = WORK / "overall-er.png"
+OUTPUT = ROOT / "report" / "停车场管理项目报告.docx"
+ENTITY_IMAGE = ROOT / "diagrams" / "02_实体属性图.drawio.png"
+ER_IMAGE = ROOT / "diagrams" / "03_整体ER图.drawio.png"
 
 
 # Database source identifiers use English snake_case; Chinese labels remain in

@@ -2,7 +2,7 @@
 
 ## Project Structure & Module Organization
 
-This repository contains the design and delivery files for a single-parking-lot database project. The root Markdown files document requirements, the data model, implementation plan, task checklist, and final review. `02_实体属性图.drawio` and `03_整体ER图.drawio` are editable diagrams; their `.png` files are report-ready exports. `停车场管理项目报告.docx` is the final report. The `sql/` directory contains the MySQL schema and sample data, query documentation, field design, and Chinese-to-English name mapping. `_report_build/` holds report scripts and render/validation artifacts; check their local paths before reusing them on another machine.
+This repository contains the design and delivery files for a single-parking-lot database project. `docs/` contains requirements, the data model, implementation plan, task checklist, and final review. `diagrams/` contains editable draw.io diagrams, report-ready PNG exports, and the original backups under `diagrams/backups/`. `report/停车场管理项目报告.docx` is the final report, while `report/build/` holds report scripts, screenshots, and render/validation artifacts. The `sql/` directory contains the MySQL schema and sample data, query documentation, field design, and Chinese-to-English name mapping.
 
 ## Build, Test, and Development Commands
 

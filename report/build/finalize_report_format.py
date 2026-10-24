@@ -4,8 +4,8 @@ from zipfile import ZipFile
 import re
 from lxml import etree
 
-ROOT=Path(__file__).resolve().parents[1]
-PATH=ROOT/'停车场管理项目报告.docx'
+ROOT=Path(__file__).resolve().parents[2]
+PATH=ROOT/'report'/'停车场管理项目报告.docx'
 W='http://schemas.openxmlformats.org/wordprocessingml/2006/main'
 NS={'w':W}
 def tag(n):return '{'+W+'}'+n

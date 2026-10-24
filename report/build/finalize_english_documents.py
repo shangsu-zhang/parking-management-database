@@ -5,8 +5,8 @@ from pathlib import Path
 from zipfile import ZipFile
 from lxml import etree
 
-ROOT = Path(__file__).resolve().parents[1]
-builder = ROOT/'_report_build'/'build_report.py'
+ROOT = Path(__file__).resolve().parents[2]
+builder = Path(__file__).resolve().with_name('build_report.py')
 tree = ast.parse(builder.read_text(encoding='utf-8'))
 mapping = next(ast.literal_eval(n.value) for n in tree.body if isinstance(n,ast.Assign)
                and any(isinstance(t,ast.Name) and t.id=='SOURCE_IDENTIFIERS' for t in n.targets))
@@ -52,14 +52,14 @@ q='\n'.join(lines)+'\n'
 q=q.replace("`SUM(车位状态 = '占用')`","`SUM(space_status = '占用')`")
 query_path.write_text(q,encoding='utf-8')
 
-model=ROOT/'01_需求与数据库模型.md'
+model=ROOT/'docs'/'01_需求与数据库模型.md'
 m=model.read_text(encoding='utf-8')
 m=m.replace('关系模式如下，属性后的下划线含义为主键，`FK` 后注明参照关系：',
             '关系模式使用英文物理名称，`PK` 标记主键；外键及基数见第 4 节联系说明与配套字段设计说明。')
 m=re.sub(r'参照(车主|车辆|车位|管理员|收费规则|月租合同|停车记录)\(([^)]+)\)',lambda x:'参照'+translate(x[1])+'('+translate(x[2])+')',m)
 model.write_text(m,encoding='utf-8')
 
-path=ROOT/'停车场管理项目报告.docx'
+path=ROOT/'report'/'停车场管理项目报告.docx'
 W='http://schemas.openxmlformats.org/wordprocessingml/2006/main'
 ns={'w':W}
 with ZipFile(path) as z:
